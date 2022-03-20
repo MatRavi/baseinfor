@@ -1,0 +1,32 @@
+body{
+    background: black;
+}
+#info{
+    color:greenyellow;
+    margin: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+input{
+    width: 300px;
+    height: 20px;
+    background: gray;
+    color: greenyellow;
+    border: solid 2px red;
+    border-radius: 5px;
+}
+#resultados{
+    text-align: center;
+    color:greenyellow;
+}
+H1{
+    COLOR:RED;
+    font-size: 35px;
+}
+#creditos{
+    background:linear-gradient(black,greenyellow);
+    font-size: 40px;
+    text-align: center;
+    margin: 25px;
+    color: red;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="f2grau.css" /> 
+</head>
+<body>
+    <div id="info">
+        <h1>CALCULADORA DE FUNÇÃO DO 2* GRAU</h1>
+        <h3>digite numerador de A:</h3>
+        <input type="number" id="fai">
+        <h3>digite denominador de A:</h3>
+        <input type="number" id="faz"><br />
+        <h3>digite numerador de B:</h3>
+        <input type="number" id="fbi">
+        <h3>digite denominador de B:</h3>
+        <input type="number" id="fbz"><br />
+        <h3>digite numerador de C:</h3>
+        <input type="number" id="fci">
+        <h3>digite denominador de C:</h3>
+        <input type="number" id="fcz"><br />
+        <input type="button" id="calcular" value="começar" onclick="comecar()"><br />
+
+        <div class="ie" id="A">A</div><br />
+
+        <div class="ie" id="B">B</div><br />
+
+        <div class="ie" id="C">C</div><br />
+
+        <div class="ie" id="delt">Delta</div><br />
+
+        <div class="ie" id="XL">XL</div><br />
+
+        <div class="ie" id="X2L">X2L</div><br />
+
+        <div class="ie" id="YV">YV</div><br />
+
+        <div class="ie" id="XV">XV</div><br />
+
+        <div class="ie" id="Pd">ponto de ...</div><br />
+
+        <div class="ie" id="TP">toca ... pontos</div><br />
+
+        <div class="ie" id="PI">ponto de interseção</div><br />
+    </div>
+    </div>
+    <div id="creditos">
+        MADE BY RAV
+    </div>
+    <script>
+        alert("Eu sei que isso não é um jogo ,mas você vai gostar :3")
+        var A = document.getElementById('A')
+        var B = document.getElementById('B')
+        var C = document.getElementById('C')
+        var delta = document.getElementById('delt')
+        var x1 = document.getElementById('XL')
+        var x2l = document.getElementById('X2L')
+        var yv = document.getElementById('YV')
+        var xv = document.getElementById('XV')
+        var pd = document.getElementById('Pd')
+        var tp = document.getElementById('TP')
+        var pi = document.getElementById('PI')
+function comecar(){
+    var ta1 = document.getElementById('fai')
+    var ta2 = document.getElementById('faz')
+    var n1 = Number(ta1.value)
+    var n2 = Number(ta2.value)
+    var a = n1/n2
+    A.innerText = a
+
+    var tb1 = document.getElementById('fbi')
+    var tb2 = document.getElementById('fbz')
+    var n3 = Number(tb1.value)
+    var n4 = Number(tb2.value)
+    var b = n3/n4
+    B.innerText = b
+
+    var tc1 = document.getElementById('fci')
+    var tc2 = document.getElementById('fcz')
+    var n5 = Number(tc1.value)
+    var n6 = Number(tc2.value)
+    var c = n5/n6
+    C.innerText = c
+
+    var AVa = a
+    var BVa = b
+    var CVa = c
+
+    deltar = BVa**2-4*AVa*CVa
+    delta.innerText = deltar
+    
+//----------------------------------------//
+var raiz = Math.sqrt(deltar);
+
+if (deltar>=0){
+   var X1 =(-BVa+raiz)/(2*AVa)
+      x1.innerText = "XL =" + X1
+   var X2 =(-BVa-raiz)/(2*AVa)
+      x2l.innerText = "X2L =" + X2
+}
+//----------------------------------------//
+var Yv = -deltar/(4*AVa)
+    yv.innerText = "YV =" + Yv
+var Xv = -BVa/(2*AVa)
+    xv.innerText = "XV =" + Xv
+//----------------------------------------//
+
+if (AVa>0) {
+    pd.innerText = "Ponto de Minimo"
+}else{
+    pd.innerText = "Ponto de Máximo"
+}
+//----------------------------------------//
+if (deltar>0){
+    tp.innerText = "Toca 2 pontos"
+}else if (deltar<0){
+    tp.innerText = "Toca 0 pontos"
+}else {
+    tp.innerText = "Toca 1 ponto"
+}
+//-----------------------------------------//
+    pi.innerText = "ponto de interseção Y= " + CVa
+}
+    </script>
+</body>
+</html>

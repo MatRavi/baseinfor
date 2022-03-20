@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<STYLE>
+    a {
+	    color: cyan;
+		margin: auto;
+		text-decoration: none;
+		font-size: 25px;
+		font-style: normal;
+		
+    }
+	a:hover{
+		color: red;
+		text-decoration: none;
+	}
+	hr{
+	 	border:solid 5px black;
+	 	width:100%;
+	 	margin: auto;
+	}
+	#S{
+	    border: 5px solid purple;
+		WIDTH:500PX;
+		height:200px;
+		BACKGROUND:DARKBLUE;
+		COLOR:rgb(96, 243, 96);
+		margin:0 auto;
+		font-size:20px;
+		text-align:center;
+		border-collapse: collapse;
+	}
+	#ss{
+		text-align:center;
+	}
+	tr,td,th{
+		border-bottom:3px solid rgb(129, 30, 129);
+	}
+	th{
+		background: linear-gradient(rgb(21, 96, 194),rgb(255, 107, 61));
+	}
+	tr:hover{
+		background-color: blueviolet;
+	}
+	P{
+	 FONT-weight:BOLD;
+	 COLOR:BLUE;
+	}
+	#oi{
+	 width:100%;
+	 height:90px;
+	 background:linear-gradient(white,lightgreen);
+	}
+	#menu{
+	 width:100%;
+	 height:auto;
+	 background-color:black;
+	 MARGIN:7px;
+	 padding:5px;
+	 display:flex;
+	 justify-content: space-around;
+	 flex-direction:row;
+	 border:solid 3px lightgreen;
+	}
+	#menu a{
+	 width: 33%;
+	 padding-left:7px;
+	 padding-right:7px;
+	 text-decoration: none;
+	 text-align: center;
+	 color: lightgreen;
+	 border: 2px solid darkblue;
+	}
+	#menu a:hover{
+	 color: red;
+	 background-color: #04090b;
+	}
+	#animes{
+		text-align: center;
+	}
+	#img{
+		width: 400px;
+		height: 400px;
+		border: 5px solid black;
+	}
+	#img:hover{
+		border: 2px solid white;
+		width: 450px;
+		height: 450px;
+	}
+	h1,h2{
+		text-align: center;
+	}
+	::selection{
+		color: rgb(144, 188, 255);
+		background: black;
+	}
+	h3{
+		color: BLACK;
+		font-size: 15px;
+		text-align: center;
+	}
+	dd{
+		font-size: 30px;
+	}
+	dt{
+		font-size: 70px;
+	}
+	button{
+		text-align: center;
+		margin: 3px;
+		color: gray;
+		width: 200px;
+		height: 40px;
+		border-radius: 5px;
+		color: blue;
+		border: 3px solid black;
+		font-size: 20px;
+	}
+	button:hover{
+		background: darkgrey;
+		border: 3px solid blue;
+	}
+	.dark-mode {
+        background-color: black;
+        color: white;
+    }
+    .light-mode {
+        background-color: white;
+        color: black;
+    }
+	#modes{
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+<div id="oi">
+<H1 class="cen">BEM-VINDO</H1>
+</div>
+<hr>
+<H1>INÍCIO</H1>
+<div id="modes">
+<h2 id="DarkModetext">Dark Mode DESLIGADO</h2>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+</div>
+<div id="menu">
+ <A HREF="#animes">SINOPSE DE ANIMES</A>
+ <A HREF="#S">SITES DE ANIMES</A>
+ <A HREF="#D">IMAGENS DE ANIMES</A>
+</div>
+<hr>
+<div id="animes">
+<h1 class="cen">ANIMES</H1>
+
+<DL>
+<DT><b><a href="#dbz">DBZ</a></b></DT>
+<DD><SPAN>A série segue as aventuras do protagonista, Son Goku,
+	 desde sua infância até a idade adulta enquanto ele treina artes marciais 
+	 e explora o mundo em busca de sete esferas conhecidas como as Esferas do Dragão, 
+	 que convocam um dragão que concede um desejo quando reunidas.</SPAN></DD>
+<DT><b><a href="#naru">NARUTO</a></b></DT>
+<DD>Naruto é um jovem órfão habitante da Vila da Folha que sonha se tornar o quinto Hokage, 
+	o maior guerreiro e governante da vila. ... Agora Naruto vai contar com a ajuda dos colegas 
+	Sakura e Sasuke e do professor dos três, Kakashi Hatake,
+	para perseguir seu sonho e deter os ninjas que planejam fazer mal á sua cidade.</DD>
+<DT><b><a href="#onep">ONE PIECE</a></b></DT>
+<DD>A série centra-se em Monkey D. Luffy, um jovem que, inspirado por seu ídolo de 
+	infância e poderoso pirata Shanks, "o Ruivo", sai em uma jornada do mar East Blue para encontrar o 
+	famoso tesouro One Piece e proclamar-se o Rei dos Piratas.</DD>
+<DT><b><a href="#outani">OUTROS</a></b></DT>
+<DD>Aqui você vai achar outros tipos de animes.</DD>
+</DL>
+</div>
+<hr>
+<div>
+ <h2 class="cen">SITES QUE VOÇÊ PODE GOSTAR</h2>
+ <TABLE ID="S">
+ <THEAD>
+   <TR>
+    <TH COLSPAN="2">SITES DE ANIME</TH>
+   </TR>
+ </THEAD>
+ <TFOOT>
+  <TR>
+    <TD id="ss" colspan="2">CLIQUE NO NOME PARA IR AO SITE</TD>
+  </TR>
+ </TFOOT>
+ <TBODY>
+   <TR>
+    <TD><A HREF="https://www.animelab.com/9" TARGET="_BLANK">ANIMELAB</A></TD>
+	<TD><A HREF="https://9anime.to/?13" TARGET="_BLANK">9ANIME</A></TD>
+   </TR>
+   <TR>
+    <TD><A HREF="https://animepahe.cc/" TARGET="_BLANK">ANIMEPAHE</A></TD>
+	<TD><A HREF="https://animedao.to/" TARGET="_BLANK">ANIMEDAO</A></TD>
+   </TR>
+   <TR>
+    <TD><A HREF="https://animesonline.cc/tv/" TARGET="_BLANK">ANIME ONLINE</A></TD>
+	<TD><A HREF="https://animetvonline.xyz/" TARGET="_BLANK">ANIME TV</A></TD>
+   </TR>
+  </TBODY>
+ </TABLE>
+</div>
+<HR>
+<div id="D">
+	
+<h1 id="dbz">DRAGON BALL Z</h1>
+<HR>
+<img src="imagem/DBZ1.jpeg" id="img">
+<img src="imagem/DBZ2.jpeg" id="img">
+<img src="imagem/DBZ3.png" id="img">
+
+<hr>
+<h1 id="naru">NARUTO</h1>
+<HR>
+<img src="imagem/NARU1.jpeg" id="img">
+<img src="imagem/NARU2.jpeg" id="img">
+<img src="imagem/NARU3.jpeg" id="img">
+
+<hr>
+<h1 id="onep">ONE PIECE</h1>
+<HR>
+<img src="imagem/OP1.jpeg" id="img">
+<img src="imagem/OP2.jpeg" id="img">
+<img src="imagem/OP3.png" id="img">
+<hr>
+<h1 id="outani">OUTROS ANIMES</h1>
+<HR>
+<img src="imagem/BH.jpeg" id="img">
+<img src="imagem/HVSH.jpeg" id="img">
+</div>
+<script src="darkmode.js">
+</script>
+</body>
+</HTML>
