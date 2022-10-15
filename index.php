@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+    <div class="cube">
+        <div class="top"></div>
+        <div>
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+    </div>
+    <div id="ss">
+        <h1>CARREGANDO...</h1><br>
+        <div id="nn">
+            <a href="lob.html">=>CONCLUIDO<=</a>
+        </div>
+    </div>
+  
+</body>
+</html>
