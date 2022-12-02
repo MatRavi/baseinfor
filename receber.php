@@ -1,5 +1,5 @@
 <?php
-  echo "olá!"
+  header('location: coment.html');
   $nome = $_POST['nome'];
   $email = $_POST['email'];
   $mensagem = $_POST['mensagem'];
@@ -26,5 +26,4 @@
   mail($destino, $assunto, $arquivo, $headers);
   
   echo "<meta http-equiv='refresh' content='10;URL=coment.html'>";
-  header('location: coment.html');
 ?>
